@@ -95,3 +95,16 @@ GPS ───────────► STM32 ─────────► ES
 ## Лицензия
 
 Пока не выбрана. Перед публикацией исходников необходимо добавить файл `LICENSE`.
+
+## Подробная техническая спецификация
+
+Для продолжения разработки в Codex дополнительно подготовлены:
+
+- [`docs/rc-controls.md`](docs/rc-controls.md) — SWC, выбор точки, переходы режимов.
+- [`docs/telemetry.md`](docs/telemetry.md) — известные поля i-BUS, значения `FLIGHT_MODE`, совместимость с FS-i6.
+- [`docs/mission-behavior.md`](docs/mission-behavior.md) — потеря связи, продолжение миссии, ожидание 90 секунд, возврат HOME.
+- [`docs/interfaces-and-roadmap.md`](docs/interfaces-and-roadmap.md) — границы STM32/ESP32/Android, проверка исходников и очередность работ.
+
+Эти документы различают подтверждённые требования и вопросы, которые необходимо сверить с `my_pixhawk.ino` и реальным оборудованием.
+
+- [`docs/source-audit-my-pixhawk.md`](docs/source-audit-my-pixhawk.md) — проверенные детали загруженного `my_pixhawk(1).ino` и расхождения с новой архитектурой.
